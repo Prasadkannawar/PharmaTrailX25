@@ -1,0 +1,37 @@
+# Phase 2 Additional Dependencies
+
+# Clinical NLP Engine
+transformers>=4.30.0
+torch>=2.0.0
+spacy>=3.6.0
+scispacy>=0.5.0
+en-core-sci-sm @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_sm-0.5.1.tar.gz
+en-ner-bc5cdr-md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_ner_bc5cdr_md-0.5.1.tar.gz
+datasets>=2.12.0
+tokenizers>=0.13.0
+
+# Text Processing & NLP
+nltk>=3.8.0
+textstat>=0.7.0
+sentence-transformers>=2.2.0
+rouge-score>=0.1.2
+
+# Blockchain & Cryptography
+hashlib2>=1.0.1
+cryptography>=41.0.0
+ecdsa>=0.18.0
+merkletools>=1.0.3
+
+# Additional API & Database
+redis>=4.5.0
+celery>=5.3.0
+pymongo>=4.4.0
+
+# Visualization & Reporting
+plotly>=5.15.0
+dash>=2.11.0
+reportlab>=4.0.0
+
+# Testing & Validation
+pytest-asyncio>=0.21.0
+httpx>=0.24.0

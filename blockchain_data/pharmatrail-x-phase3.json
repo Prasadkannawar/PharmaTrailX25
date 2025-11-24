@@ -1,0 +1,996 @@
+{
+  "chain_id": "pharmatrail-x-phase3",
+  "blocks": [
+    {
+      "index": 0,
+      "timestamp": "2025-11-20T17:28:51.597784",
+      "data": {
+        "message": "PharmaTrail-X Genesis Block",
+        "version": "2.0.0",
+        "created_at": "2025-11-20T17:28:51.597784",
+        "purpose": "Clinical trial audit logging"
+      },
+      "previous_hash": "0",
+      "hash": "c854b9c41d12ddf3e4323ac7841da43f64040480fd474b4bcd39a24d7ea3dab1",
+      "nonce": 0
+    },
+    {
+      "index": 1,
+      "timestamp": "2025-11-20T17:29:47.219645",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "API-TEST-001",
+          "simulation_days": 30,
+          "total_enrolled": 15,
+          "completion_date": null,
+          "delay_risk_score": 0.38,
+          "cost_estimate": 53392.27415674524
+        },
+        "logged_at": "2025-11-20T17:29:47.219645",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "c854b9c41d12ddf3e4323ac7841da43f64040480fd474b4bcd39a24d7ea3dab1",
+      "hash": "ba68090f2f9ceb7094104aac7ac9d6235f29379ff1c23c429c19bac7acd99097",
+      "nonce": 0
+    },
+    {
+      "index": 2,
+      "timestamp": "2025-11-20T19:21:57.024031",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763666509680",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-20T19:21:57.024031",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "ba68090f2f9ceb7094104aac7ac9d6235f29379ff1c23c429c19bac7acd99097",
+      "hash": "4fb856cd91414ec5c6208033b3030a9bf915671b551d6cc488bcef671aab1e69",
+      "nonce": 0
+    },
+    {
+      "index": 3,
+      "timestamp": "2025-11-20T19:27:42.534405",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763666859803",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2037-05-19T12:57:42.527871",
+          "delay_risk_score": 0.47458766120599516,
+          "cost_estimate": 2868645.534491244
+        },
+        "logged_at": "2025-11-20T19:27:42.534405",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "4fb856cd91414ec5c6208033b3030a9bf915671b551d6cc488bcef671aab1e69",
+      "hash": "073ab79814c277b5b3fd414a9b9dbde2276bb51903ac44655b71dbc8beadbebd",
+      "nonce": 0
+    },
+    {
+      "index": 4,
+      "timestamp": "2025-11-20T19:29:26.783868",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763666964825",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2031-02-19T06:59:26.773737",
+          "delay_risk_score": 0.4657935827638132,
+          "cost_estimate": 3549839.2648387696
+        },
+        "logged_at": "2025-11-20T19:29:26.783868",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "073ab79814c277b5b3fd414a9b9dbde2276bb51903ac44655b71dbc8beadbebd",
+      "hash": "7e4796f62e32ff3fa666e3a84facfe02c60b7d5f12ce22cdaacb1747bdfca003",
+      "nonce": 0
+    },
+    {
+      "index": 5,
+      "timestamp": "2025-11-20T19:31:35.015491",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763667091520",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-20T19:31:35.015491",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "7e4796f62e32ff3fa666e3a84facfe02c60b7d5f12ce22cdaacb1747bdfca003",
+      "hash": "a97ca0646e2942e970e041c4ad9128639657e0fd2c63c67890d763f1c48f12cb",
+      "nonce": 0
+    },
+    {
+      "index": 6,
+      "timestamp": "2025-11-20T19:31:39.093801",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763667098163",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-20T19:31:39.093801",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "a97ca0646e2942e970e041c4ad9128639657e0fd2c63c67890d763f1c48f12cb",
+      "hash": "1f409a2c0aab6de7e33df8e21c140b5bca6ed11e533bb174bddb88e6b0f0bcb3",
+      "nonce": 0
+    },
+    {
+      "index": 7,
+      "timestamp": "2025-11-21T03:11:59.188413",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763694714810",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 3,
+          "ae_events": [
+            {
+              "event_text": "headache",
+              "severity": "mild",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763694714810"
+            },
+            {
+              "event_text": "severe headache",
+              "severity": "severe",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763694714810"
+            },
+            {
+              "event_text": "nausea",
+              "severity": "mild",
+              "category": "gastrointestinal",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763694714810"
+            }
+          ],
+          "severity": "severe",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T03:11:59.188413",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "1f409a2c0aab6de7e33df8e21c140b5bca6ed11e533bb174bddb88e6b0f0bcb3",
+      "hash": "dd93cadde4c36fb300ba54fb2c2dfba2a6f28de7ab25e3b6c2f14e354c6b6d3f",
+      "nonce": 0
+    },
+    {
+      "index": 8,
+      "timestamp": "2025-11-21T03:12:11.841443",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763694714810",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 3,
+          "ae_events": [
+            {
+              "event_text": "headache",
+              "severity": "mild",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763694714810"
+            },
+            {
+              "event_text": "severe headache",
+              "severity": "severe",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763694714810"
+            },
+            {
+              "event_text": "nausea",
+              "severity": "mild",
+              "category": "gastrointestinal",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763694714810"
+            }
+          ],
+          "severity": "severe",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T03:12:11.841443",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "dd93cadde4c36fb300ba54fb2c2dfba2a6f28de7ab25e3b6c2f14e354c6b6d3f",
+      "hash": "151661964371e0b8e1637775fdd11063c5d22565c8970e9432490f8b47a35347",
+      "nonce": 0
+    },
+    {
+      "index": 9,
+      "timestamp": "2025-11-21T03:12:27.994063",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763694744805",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2030-10-08T10:07:10.342005",
+          "delay_risk_score": 0.4825445292620865,
+          "cost_estimate": 3574050.509593219
+        },
+        "logged_at": "2025-11-21T03:12:27.994063",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "151661964371e0b8e1637775fdd11063c5d22565c8970e9432490f8b47a35347",
+      "hash": "460214dd2e3b707f749cf09f550bf681487444a3343291fbbba96f943165ab7a",
+      "nonce": 0
+    },
+    {
+      "index": 10,
+      "timestamp": "2025-11-21T04:38:47.141727",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763699905962",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-21T04:38:47.141727",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "460214dd2e3b707f749cf09f550bf681487444a3343291fbbba96f943165ab7a",
+      "hash": "7e3ec91d5d555cf1aa75628ed1b174a0af6f3152b55cfe2e2c6b19a37065ebb4",
+      "nonce": 0
+    },
+    {
+      "index": 11,
+      "timestamp": "2025-11-21T04:39:59.363665",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763699995969",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 1,
+          "ae_events": [
+            {
+              "event_text": "elevated alt",
+              "severity": "moderate",
+              "category": "hepatic",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763699995969"
+            }
+          ],
+          "severity": "moderate",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T04:39:59.363665",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "7e3ec91d5d555cf1aa75628ed1b174a0af6f3152b55cfe2e2c6b19a37065ebb4",
+      "hash": "5cc41aa0690d230493b630f47d9b739667805481e9b6bbecdbf5dd816c806c53",
+      "nonce": 0
+    },
+    {
+      "index": 12,
+      "timestamp": "2025-11-21T04:40:18.338156",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763699995969",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 1,
+          "ae_events": [
+            {
+              "event_text": "elevated alt",
+              "severity": "moderate",
+              "category": "hepatic",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763699995969"
+            }
+          ],
+          "severity": "moderate",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T04:40:18.338156",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "5cc41aa0690d230493b630f47d9b739667805481e9b6bbecdbf5dd816c806c53",
+      "hash": "2ef8ffee47413abb93f65e3997ecfe936f316ac0440749e5c49f4cf4f1bc1ab1",
+      "nonce": 0
+    },
+    {
+      "index": 13,
+      "timestamp": "2025-11-21T04:40:48.226023",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763700035931",
+          "simulation_days": 365,
+          "total_enrolled": 80,
+          "completion_date": "2034-11-19T10:10:48.176645",
+          "delay_risk_score": 0.4661969964664311,
+          "cost_estimate": 2267100.8773897365
+        },
+        "logged_at": "2025-11-21T04:40:48.226023",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "2ef8ffee47413abb93f65e3997ecfe936f316ac0440749e5c49f4cf4f1bc1ab1",
+      "hash": "e8bcc5fd88915cbe3e3b4a8bf5eafa106ca07a322d97ab34d274e8049621703a",
+      "nonce": 0
+    },
+    {
+      "index": 14,
+      "timestamp": "2025-11-21T04:41:22.943281",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763700075470",
+          "simulation_days": 365,
+          "total_enrolled": 96,
+          "completion_date": "2033-12-22T14:33:12.026664",
+          "delay_risk_score": 0.46553030303030307,
+          "cost_estimate": 2772759.4867668226
+        },
+        "logged_at": "2025-11-21T04:41:22.943281",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "e8bcc5fd88915cbe3e3b4a8bf5eafa106ca07a322d97ab34d274e8049621703a",
+      "hash": "bac2b37a55e08bed7793a29a45ee75b895238feb3b0ec1d26a6ac83cc2d4c485",
+      "nonce": 0
+    },
+    {
+      "index": 15,
+      "timestamp": "2025-11-21T04:41:28.372454",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763700085986",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2030-06-11T04:51:28.364709",
+          "delay_risk_score": 0.4635151515151515,
+          "cost_estimate": 3672352.7065951284
+        },
+        "logged_at": "2025-11-21T04:41:28.372454",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "bac2b37a55e08bed7793a29a45ee75b895238feb3b0ec1d26a6ac83cc2d4c485",
+      "hash": "7dfdd840dbc6548c31c4d3d75e262c28be2c9665f1070febbaeaeac5488fca13",
+      "nonce": 0
+    },
+    {
+      "index": 16,
+      "timestamp": "2025-11-21T04:41:58.340212",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763700115974",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2032-07-30T02:48:53.718307",
+          "delay_risk_score": 0.46799999999999997,
+          "cost_estimate": 3028198.83472671
+        },
+        "logged_at": "2025-11-21T04:41:58.340212",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "7dfdd840dbc6548c31c4d3d75e262c28be2c9665f1070febbaeaeac5488fca13",
+      "hash": "f5d4a91e3ca1a99bc1c968ddc5ef90b2898de0ec898666f8b41a5f5940ed3aad",
+      "nonce": 0
+    },
+    {
+      "index": 17,
+      "timestamp": "2025-11-21T04:42:29.441847",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763700146280",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2030-06-11T04:52:29.433396",
+          "delay_risk_score": 0.423,
+          "cost_estimate": 2984039.779752688
+        },
+        "logged_at": "2025-11-21T04:42:29.441847",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "f5d4a91e3ca1a99bc1c968ddc5ef90b2898de0ec898666f8b41a5f5940ed3aad",
+      "hash": "bad2e77d2e9d9c5695ec9b3ab264a298635f3fccf5b601a23cb6b8a18b8ea6ec",
+      "nonce": 0
+    },
+    {
+      "index": 18,
+      "timestamp": "2025-11-21T04:47:29.496081",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763700445964",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2031-07-21T18:17:29.489773",
+          "delay_risk_score": 0.476,
+          "cost_estimate": 3468065.4255974847
+        },
+        "logged_at": "2025-11-21T04:47:29.496081",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "bad2e77d2e9d9c5695ec9b3ab264a298635f3fccf5b601a23cb6b8a18b8ea6ec",
+      "hash": "50fe0ced26eeac548e0df8f5d462677e52cc4bb78e8490e838836cf3bfee4fe9",
+      "nonce": 0
+    },
+    {
+      "index": 19,
+      "timestamp": "2025-11-21T08:31:38.763235",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763713893767",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 3,
+          "ae_events": [
+            {
+              "event_text": "headache",
+              "severity": "mild",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763713893767"
+            },
+            {
+              "event_text": "severe headache",
+              "severity": "severe",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763713893767"
+            },
+            {
+              "event_text": "nausea",
+              "severity": "mild",
+              "category": "gastrointestinal",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763713893767"
+            }
+          ],
+          "severity": "severe",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T08:31:38.763235",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "50fe0ced26eeac548e0df8f5d462677e52cc4bb78e8490e838836cf3bfee4fe9",
+      "hash": "e8709212fdf475c099f7c448ae7101adac609c771d8e4b896fe52d7745b8b479",
+      "nonce": 0
+    },
+    {
+      "index": 20,
+      "timestamp": "2025-11-21T08:33:43.634456",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763714020870",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2030-06-11T08:43:43.629448",
+          "delay_risk_score": 0.45798019801980194,
+          "cost_estimate": 3277283.0932396413
+        },
+        "logged_at": "2025-11-21T08:33:43.634456",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "e8709212fdf475c099f7c448ae7101adac609c771d8e4b896fe52d7745b8b479",
+      "hash": "5ea9d3d2a8a8c1c0566197da70b6edf9294acc18fa3a53f9f68f88ed15c2f9bf",
+      "nonce": 0
+    },
+    {
+      "index": 21,
+      "timestamp": "2025-11-21T08:52:17.274142",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763715128196",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-21T08:52:17.274142",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "5ea9d3d2a8a8c1c0566197da70b6edf9294acc18fa3a53f9f68f88ed15c2f9bf",
+      "hash": "949bdb7de4fd1a19b9f53dc82b0affbff1fe1eaa3ed1f2bcbf6e91d0823bda89",
+      "nonce": 0
+    },
+    {
+      "index": 22,
+      "timestamp": "2025-11-21T08:52:35.588592",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763715146461",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 2,
+          "ae_events": [
+            {
+              "event_text": "protocol deviation",
+              "severity": "moderate",
+              "category": "protocol_deviation",
+              "confidence": 0.8,
+              "trial_id": "NLP-1763715146461"
+            },
+            {
+              "event_text": "deviation",
+              "severity": "moderate",
+              "category": "protocol_deviation",
+              "confidence": 0.8,
+              "trial_id": "NLP-1763715146461"
+            }
+          ],
+          "severity": "moderate",
+          "confidence": 0.8,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T08:52:35.588592",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "949bdb7de4fd1a19b9f53dc82b0affbff1fe1eaa3ed1f2bcbf6e91d0823bda89",
+      "hash": "d13f88f5db8a3fa29dc0c8579c7b26d8ae5cfc74495e074f1bd457643a39b2da",
+      "nonce": 0
+    },
+    {
+      "index": 23,
+      "timestamp": "2025-11-21T08:53:00.832207",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763715170520",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2032-01-11T17:48:43.681162",
+          "delay_risk_score": 0.4805865102639296,
+          "cost_estimate": 3479585.4348281347
+        },
+        "logged_at": "2025-11-21T08:53:00.832207",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "d13f88f5db8a3fa29dc0c8579c7b26d8ae5cfc74495e074f1bd457643a39b2da",
+      "hash": "3bc4e65a7d66c0cef79c4f7f5aafd23400a6c36ef5c37e4c55e8a4ef06e7b4f6",
+      "nonce": 0
+    },
+    {
+      "index": 24,
+      "timestamp": "2025-11-21T08:53:34.873387",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763715199165",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2029-11-20T14:23:34.867388",
+          "delay_risk_score": 0.4310618556701031,
+          "cost_estimate": 3259715.777167014
+        },
+        "logged_at": "2025-11-21T08:53:34.873387",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "3bc4e65a7d66c0cef79c4f7f5aafd23400a6c36ef5c37e4c55e8a4ef06e7b4f6",
+      "hash": "cc9e35aa26a5ae4a9157ebc05c5d38c4bff4d6fd8ce2097031ac62148ea9a102",
+      "nonce": 0
+    },
+    {
+      "index": 25,
+      "timestamp": "2025-11-21T09:40:06.833932",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763717998007",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-21T09:40:06.833932",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "cc9e35aa26a5ae4a9157ebc05c5d38c4bff4d6fd8ce2097031ac62148ea9a102",
+      "hash": "47732b48d169f4f03a02cc1d6113b127bbdb283d4a50921bc89aab72a97fab1b",
+      "nonce": 0
+    },
+    {
+      "index": 26,
+      "timestamp": "2025-11-21T09:40:10.995600",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763717998007",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-21T09:40:10.995600",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "47732b48d169f4f03a02cc1d6113b127bbdb283d4a50921bc89aab72a97fab1b",
+      "hash": "0a6a991a3fa9b69b10e9066e132a71f3c3093d20100dd736a3f2ba106339fada",
+      "nonce": 0
+    },
+    {
+      "index": 27,
+      "timestamp": "2025-11-21T09:40:12.115814",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763717998007",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-21T09:40:12.115814",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "0a6a991a3fa9b69b10e9066e132a71f3c3093d20100dd736a3f2ba106339fada",
+      "hash": "a0542716628648a266ec797748d15c74f3f77b88eda9ea2d7ee8b3b7cd1594ff",
+      "nonce": 0
+    },
+    {
+      "index": 28,
+      "timestamp": "2025-11-21T09:40:45.368869",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763718028002",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 0,
+          "ae_events": [],
+          "severity": "none",
+          "confidence": 0.0,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T09:40:45.368869",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "a0542716628648a266ec797748d15c74f3f77b88eda9ea2d7ee8b3b7cd1594ff",
+      "hash": "10f80b92077eb0655dee00d3a6cc66c7116bd124cb96c4f49941151c66888c79",
+      "nonce": 0
+    },
+    {
+      "index": 29,
+      "timestamp": "2025-11-21T09:41:08.586742",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763718058008",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 1,
+          "ae_events": [
+            {
+              "event_text": "elevated alt",
+              "severity": "moderate",
+              "category": "hepatic",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763718058008"
+            }
+          ],
+          "severity": "moderate",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T09:41:08.586742",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "10f80b92077eb0655dee00d3a6cc66c7116bd124cb96c4f49941151c66888c79",
+      "hash": "63d8c56f1bf6f1cd6760c6f2eb84398f8ae6700508f5e3e53f383aee999c2419",
+      "nonce": 0
+    },
+    {
+      "index": 30,
+      "timestamp": "2025-11-21T09:41:33.957142",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763718088312",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 3,
+          "ae_events": [
+            {
+              "event_text": "headache",
+              "severity": "mild",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763718088312"
+            },
+            {
+              "event_text": "severe headache",
+              "severity": "severe",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763718088312"
+            },
+            {
+              "event_text": "nausea",
+              "severity": "mild",
+              "category": "gastrointestinal",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763718088312"
+            }
+          ],
+          "severity": "severe",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T09:41:33.957142",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "63d8c56f1bf6f1cd6760c6f2eb84398f8ae6700508f5e3e53f383aee999c2419",
+      "hash": "5cc2505c96b33c9e8650beb18cb918c26fa30f5e71f898081562db6f69628ed7",
+      "nonce": 0
+    },
+    {
+      "index": 31,
+      "timestamp": "2025-11-21T09:41:53.926597",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763718105898",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2029-11-20T15:11:53.913014",
+          "delay_risk_score": 0.45299999999999996,
+          "cost_estimate": 3625391.797058581
+        },
+        "logged_at": "2025-11-21T09:41:53.926597",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "5cc2505c96b33c9e8650beb18cb918c26fa30f5e71f898081562db6f69628ed7",
+      "hash": "f3c1c1330198d745b31d8d53938ef47a2931b7ae5a3125a2ad50834a3d281e7f",
+      "nonce": 0
+    },
+    {
+      "index": 32,
+      "timestamp": "2025-11-21T09:42:02.102707",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763718118032",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2034-11-19T15:12:02.096178",
+          "delay_risk_score": 0.513,
+          "cost_estimate": 3551017.833344176
+        },
+        "logged_at": "2025-11-21T09:42:02.102707",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "f3c1c1330198d745b31d8d53938ef47a2931b7ae5a3125a2ad50834a3d281e7f",
+      "hash": "7d469d55d00e0f545201a99935a84b13ab0912426daa86213cbfde2c02a8dcf8",
+      "nonce": 0
+    },
+    {
+      "index": 33,
+      "timestamp": "2025-11-21T09:59:29.617518",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763719168317",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2031-07-21T23:29:29.609873",
+          "delay_risk_score": 0.45681020848310566,
+          "cost_estimate": 3026742.046707491
+        },
+        "logged_at": "2025-11-21T09:59:29.617518",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "7d469d55d00e0f545201a99935a84b13ab0912426daa86213cbfde2c02a8dcf8",
+      "hash": "2fad0627f74928520f62495ac1f280df50a8777dda9fa738c5a83da2eb1ccca8",
+      "nonce": 0
+    },
+    {
+      "index": 34,
+      "timestamp": "2025-11-21T10:02:56.417305",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763719371387",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 1,
+          "ae_events": [
+            {
+              "event_text": "elevated alt",
+              "severity": "moderate",
+              "category": "hepatic",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763719371387"
+            }
+          ],
+          "severity": "moderate",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-21T10:02:56.416305",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "2fad0627f74928520f62495ac1f280df50a8777dda9fa738c5a83da2eb1ccca8",
+      "hash": "3ba80aceed7bc1ba6f2cb5e73fe70c0c45988b9cc4f512271bd11b8f2568fed6",
+      "nonce": 0
+    },
+    {
+      "index": 35,
+      "timestamp": "2025-11-24T11:33:04.522528",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763983962392",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-24T11:33:04.522528",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "3ba80aceed7bc1ba6f2cb5e73fe70c0c45988b9cc4f512271bd11b8f2568fed6",
+      "hash": "c887e0c0aedc99d23db22e87c4ce369298c44781b5b952536ea59c54bff56c9c",
+      "nonce": 0
+    },
+    {
+      "index": 36,
+      "timestamp": "2025-11-24T11:33:06.749305",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763983962392",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-24T11:33:06.749305",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "c887e0c0aedc99d23db22e87c4ce369298c44781b5b952536ea59c54bff56c9c",
+      "hash": "2290e10e46d84e34851b5e0e4a08198207d8d8471fb0b2072e3ad222f04af1cd",
+      "nonce": 0
+    },
+    {
+      "index": 37,
+      "timestamp": "2025-11-24T11:33:06.932277",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763983962392",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-24T11:33:06.932277",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "2290e10e46d84e34851b5e0e4a08198207d8d8471fb0b2072e3ad222f04af1cd",
+      "hash": "468a4eca1987a21e05866984f5fe10232fe52676b031d4d21f24eb95eea21257",
+      "nonce": 0
+    },
+    {
+      "index": 38,
+      "timestamp": "2025-11-24T11:33:07.140805",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "PRED-1763983962392",
+          "delay_probability": 0.3,
+          "delay_prediction": "on_time",
+          "combined_risk_score": 0.21,
+          "regulatory_flags": [],
+          "nlp_processed": false
+        },
+        "logged_at": "2025-11-24T11:33:07.140805",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "468a4eca1987a21e05866984f5fe10232fe52676b031d4d21f24eb95eea21257",
+      "hash": "97d48b7797fc2b5868630a17192d50b18baad46be0085dd40eaf9f9b38e395a9",
+      "nonce": 0
+    },
+    {
+      "index": 39,
+      "timestamp": "2025-11-24T11:35:29.393367",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763984115824",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2033-12-25T21:27:18.479759",
+          "delay_risk_score": 0.5098980785296575,
+          "cost_estimate": 3417201.3468658417
+        },
+        "logged_at": "2025-11-24T11:35:29.393367",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "97d48b7797fc2b5868630a17192d50b18baad46be0085dd40eaf9f9b38e395a9",
+      "hash": "c3656a41aced2ccc68699c275ab51ce19748a46523aa2d161e5703f5a90420b1",
+      "nonce": 0
+    },
+    {
+      "index": 40,
+      "timestamp": "2025-11-24T11:53:07.142646",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "NLP-1763985182136",
+          "event_type": "adverse_event_extraction",
+          "entity_count": 1,
+          "ae_events": [
+            {
+              "event_text": "elevated alt",
+              "severity": "moderate",
+              "category": "hepatic",
+              "confidence": 0.85,
+              "trial_id": "NLP-1763985182136"
+            }
+          ],
+          "severity": "moderate",
+          "confidence": 0.85,
+          "patient_id": null
+        },
+        "logged_at": "2025-11-24T11:53:07.142646",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "c3656a41aced2ccc68699c275ab51ce19748a46523aa2d161e5703f5a90420b1",
+      "hash": "8315ea882b0ab6831f2ae32cda0ceb0d78f433433ec98017d18e17c9fed94904",
+      "nonce": 0
+    },
+    {
+      "index": 41,
+      "timestamp": "2025-11-24T11:53:27.694195",
+      "data": {
+        "event_type": "digital_twin_simulation",
+        "event_data": {
+          "trial_id": "TWIN-1763985206126",
+          "simulation_days": 365,
+          "total_enrolled": 100,
+          "completion_date": "2029-11-23T17:23:27.659025",
+          "delay_risk_score": 0.45527651647456047,
+          "cost_estimate": 3728504.3691075956
+        },
+        "logged_at": "2025-11-24T11:53:27.694195",
+        "chain_id": "pharmatrail-x-phase3"
+      },
+      "previous_hash": "8315ea882b0ab6831f2ae32cda0ceb0d78f433433ec98017d18e17c9fed94904",
+      "hash": "6eaf2922cb14d31661546b4fbfee857760ebe2cb8935ccbb0828b8f13a89ad45",
+      "nonce": 0
+    }
+  ],
+  "metadata": {
+    "total_blocks": 42,
+    "last_updated": "2025-11-24T11:53:27.696202"
+  }
+}

@@ -1,0 +1,682 @@
+[
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-001",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT95860384"
+      }
+    ],
+    "title": "Mock Clinical Trial 1",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-ii",
+          "display": "Phase III"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "768698",
+            "display": "Endocrinology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-03-07T12:28:16.061881",
+      "end": "2027-11-01T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 314,
+      "actual": 350
+    },
+    "site": {
+      "reference": "Organization/site-16",
+      "display": "Clinical Site 6"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-10",
+      "display": "Dr. Johnson"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "FRA",
+          "display": "Asia-Pacific"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-002",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT75010146"
+      }
+    ],
+    "title": "Mock Clinical Trial 2",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-iii",
+          "display": "Phase I"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "279891",
+            "display": "Oncology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-09-14T12:28:16.061881",
+      "end": "2027-08-01T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 158,
+      "actual": 325
+    },
+    "site": {
+      "reference": "Organization/site-11",
+      "display": "Clinical Site 10"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-39",
+      "display": "Dr. Smith"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "GBR",
+          "display": "Europe"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-003",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT68279191"
+      }
+    ],
+    "title": "Mock Clinical Trial 3",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-i",
+          "display": "Phase III"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "675618",
+            "display": "Endocrinology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-10-19T12:28:16.061881",
+      "end": "2026-11-18T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 498,
+      "actual": 61
+    },
+    "site": {
+      "reference": "Organization/site-18",
+      "display": "Clinical Site 19"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-20",
+      "display": "Dr. Williams"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "DEU",
+          "display": "Asia-Pacific"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-004",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT57933645"
+      }
+    ],
+    "title": "Mock Clinical Trial 4",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-ii",
+          "display": "Phase II"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "907426",
+            "display": "Immunology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-01-19T12:28:16.061881",
+      "end": "2027-09-30T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 183,
+      "actual": 111
+    },
+    "site": {
+      "reference": "Organization/site-18",
+      "display": "Clinical Site 5"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-20",
+      "display": "Dr. Jones"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "GBR",
+          "display": "North America"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-005",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT52473620"
+      }
+    ],
+    "title": "Mock Clinical Trial 5",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-i",
+          "display": "Phase I"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "503460",
+            "display": "Neurology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-01-11T12:28:16.061881",
+      "end": "2026-07-30T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 260,
+      "actual": 217
+    },
+    "site": {
+      "reference": "Organization/site-15",
+      "display": "Clinical Site 19"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-37",
+      "display": "Dr. Smith"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "JPN",
+          "display": "North America"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-006",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT47025086"
+      }
+    ],
+    "title": "Mock Clinical Trial 6",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-i",
+          "display": "Phase I"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "423393",
+            "display": "Cardiology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-08-10T12:28:16.061881",
+      "end": "2027-10-09T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 277,
+      "actual": 336
+    },
+    "site": {
+      "reference": "Organization/site-07",
+      "display": "Clinical Site 10"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-21",
+      "display": "Dr. Williams"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "FRA",
+          "display": "Europe"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-007",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT40226164"
+      }
+    ],
+    "title": "Mock Clinical Trial 7",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-ii",
+          "display": "Phase III"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "652653",
+            "display": "Endocrinology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-02-10T12:28:16.061881",
+      "end": "2026-07-18T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 479,
+      "actual": 86
+    },
+    "site": {
+      "reference": "Organization/site-13",
+      "display": "Clinical Site 1"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-19",
+      "display": "Dr. Smith"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "USA",
+          "display": "Europe"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-008",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT90571565"
+      }
+    ],
+    "title": "Mock Clinical Trial 8",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-ii",
+          "display": "Phase III"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "893305",
+            "display": "Neurology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-05-22T12:28:16.061881",
+      "end": "2027-04-05T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 193,
+      "actual": 243
+    },
+    "site": {
+      "reference": "Organization/site-16",
+      "display": "Clinical Site 18"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-26",
+      "display": "Dr. Williams"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "FRA",
+          "display": "North America"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-009",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT41691835"
+      }
+    ],
+    "title": "Mock Clinical Trial 9",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-i",
+          "display": "Phase III"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "583179",
+            "display": "Immunology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2024-12-23T12:28:16.061881",
+      "end": "2026-06-19T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 329,
+      "actual": 133
+    },
+    "site": {
+      "reference": "Organization/site-16",
+      "display": "Clinical Site 17"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-32",
+      "display": "Dr. Jones"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "FRA",
+          "display": "North America"
+        }
+      ]
+    }
+  },
+  {
+    "resourceType": "ResearchStudy",
+    "id": "fhir-trial-010",
+    "identifier": [
+      {
+        "system": "http://clinicaltrials.gov",
+        "value": "NCT60922696"
+      }
+    ],
+    "title": "Mock Clinical Trial 10",
+    "status": "active",
+    "phase": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "code": "phase-ii",
+          "display": "Phase I"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/research-study-category",
+            "code": "treatment",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ],
+    "condition": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "863718",
+            "display": "Immunology"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2025-06-27T12:28:16.061881",
+      "end": "2027-11-09T12:28:16.061881"
+    },
+    "enrollment": {
+      "target": 198,
+      "actual": 142
+    },
+    "site": {
+      "reference": "Organization/site-09",
+      "display": "Clinical Site 15"
+    },
+    "principalInvestigator": {
+      "reference": "Practitioner/pi-37",
+      "display": "Dr. Smith"
+    },
+    "location": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/iso3166-1-3",
+          "code": "FRA",
+          "display": "Asia-Pacific"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,239 @@
+python phase3_integrated_api.py
+(.venv) PS D:\PharmaX> python phase3_integrated_api.py
+PS D:\PharmaX\pharmatrail-x-ui> npm start
+Dashboard Overview
+URL: http://localhost:3000/dashboard
+
+Description: The dashboard provides a high-level overview of clinical trial metrics and key performance indicators.
+
+Expected Output:
+
+Real-time trial status cards
+Interactive charts showing enrollment progress
+System health indicators
+2. Delay Prediction
+URL: http://localhost:3000/analytics/predict
+
+User Input:
+
+Trial ID: TRIAL-2023-001
+Average Patient Age: 65
+Medication Adherence (%): 80
+Adverse Drug Reaction Rate: 0.15
+Average Systolic BP (mmHg): 130
+Average ALT Level (U/L): 25
+Expected Output:
+
+Delay Probability: 78%
+Risk Level: High
+Key Risk Factors:
+Patient age > 60
+Medication adherence < 85%
+Elevated ALT levels
+3. Audit Trail
+URL: http://localhost:3000/audit
+
+Description: Shows the blockchain-verified log of all system activities.
+
+Expected Output:
+
+List of events with timestamps
+Event types (Prediction, Simulation, etc.)
+Block hashes for verification
+Expandable event details
+4. Model Management
+URL: http://localhost:3000/models
+
+Actions:
+
+Click "Refresh" to load current model info
+Click "Start Training" to initiate model retraining
+Expected Output:
+
+Current Model: XGBoost v1.0.0
+Accuracy: 87.3%
+Training History: 12 runs
+Feature Importance visualization
+5. Digital Twin Simulation
+URL: http://localhost:3000/simulation
+
+User Input:
+
+Simulation Type: Patient Enrollment
+Duration: 12 months
+Patient Count: 500
+Expected Output:
+
+Interactive simulation timeline
+Resource utilization charts
+Predicted completion date
+Risk assessment
+Troubleshooting
+Backend Not Starting
+bash
+# Check for port conflicts
+netstat -ano | findstr :8006
+Frontend Build Issues
+bash
+# Clear npm cache
+npm cache clean --force
+
+# Reinstall dependencies
+rm -rf node_modules
+npm install
+API Connection Errors
+Verify backend is running on port 8006
+Check CORS settings in 
+phase3_integrated_api.py
+Ensure no ad-blockers are interfering
+Future Enhancements
+User Authentication
+Role-based access control
+JWT token authentication
+Advanced Analytics
+Time-series forecasting
+Anomaly detection
+Integration
+EHR system integration
+Real-time monitoring alerts
+Performance
+API response caching
+Database optimization
+UI/UX
+Dark mode
+Customizable dashboards
+Exportable reports
+
+## How to Use This Guide
+
+1. **For Presenters**:
+   - Follow the setup instructions to prepare the environment
+   - Use the demo walkthrough section as your script
+   - Refer to troubleshooting for any issues
+
+2. **For Mentors**:
+   - The "Future Enhancements" section provides discussion points
+   - Each component's expected output helps verify functionality
+   - The guide documents the current state for reference
+
+3. **For Developers**:
+   - The guide serves as living documentation
+   - Update it when adding new features
+   - Use it for onboarding new team members
+
+Would you like me to add any specific sections or provide more details on any part of the guide?
+Feedback submitted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🚀 What is PharmaTrail-X? (Simple Explanation)
+PharmaTrail-X is a next-generation clinical-trial intelligence platform.
+Clinical trials today take too long, are too expensive, and suffer because:
+Data comes from many places and stays scattered
+Risks like delays or safety issues are caught too late
+Manual reading of reports wastes weeks
+Regulatory audit trails are not fully trustworthy
+PharmaTrail-X solves all this by creating a Digital Twin of a clinical trial and combining it with AI, NLP, and Blockchain inside one unified platform.
+This has never been built as a single system before — companies use separate systems for analytics, separate for safety reporting, separate for documentation, 
+separate for planning.
+We unify everything.
+
+🎯 What Are We Actually Building? (One Line)
+A platform that can predict delays, detect safety risks, simulate the trial’s future, and provide tamper-proof audit logs, all in real time.
+ Breakdown of Each Component (Super Simple)
+1️⃣ AI Delay Prediction
+We collect trial data (enrollment, queries, delays, deviations) and train an ML model which predicts:
+Will the trial get delayed?
+Which site is at risk?
+What is the probability of delay today?
+This gives clinical teams an early warning system.
+
+2️⃣ NLP (Natural Language Processing) for Clinical Reports
+Clinical trial reports are mostly text:
+Doctor notes
+Investigator reports
+Lab abnormalities
+Adverse event descriptions
+We use BioBERT / ClinicalBERT to automatically:
+Extract adverse events
+Summarize long reports
+Detect protocol deviations
+Identify safety signals
+This saves 50–80% manual effort.
+
+3️⃣ Blockchain Audit Layer
+Not cryptocurrency.
+We use blockchain to store regulatory-critical events such as:
+Predictions
+AE extraction
+Data updates
+Uploaded files
+This makes the entire trial tamper-proof and ready for regulatory checks
+(FDA 21 CFR Part 11).
+
+4️⃣ Digital Twin Simulation (The Most Unique Part)
+We build a virtual replica of the clinical trial.
+A digital twin that simulates:
+Enrollment
+Delays
+Dropout rates
+Staff impact
+Cost/time changes
+Queries and data-entry cycle
+You can ask:
+“What if we add 5 more staff?”
+“What if we open 2 more trial sites?”
+“What if we reduce query resolution time?”
+The twin predicts the new completion date and risk profile.
+This helps pharma companies:
+Save time
+Save cost
+Optimize operations before acting in real life
+This alone makes the project extremely innovative.
+
+5️⃣ Unified Dashboard (React UI)
+A clean, modern SaaS interface where you can see:
+Delay prediction gauge
+AE extraction panel
+Digital Twin timeline
+Blockchain audit logs
+Trial health overview
+Scenario comparison
+Backend stores everything → User sees everything → Full transparency.
+
+💡 Why Is This Novel?
+Because no company has combined:
+AI delay prediction
+Digital Twin simulation
+Clinical NLP
+Blockchain compliance
+Unified dashboard
+…into one platform.
+Most companies build one or two components.
+Nobody has built all five together in one integrated system.
+
+So yes — this is the first time such a unified solution is being created (even as a POC).
+🎤 30-Second Pitch for Judges / Investors
+"PharmaTrail-X is a unified clinical-trial intelligence platform that predicts delays, detects safety issues from clinical text, simulates the future of a
+ trial using a digital twin, and secures every event using blockchain. Today, clinical trial data is scattered, slow, and reactive. We make it real-time, 
+ predictive, and tamper-proof. Our platform can reduce trial timelines by up to 25%, cut manual review work by 80%, and provide complete regulatory transparency. 
+ No existing tool in the market combines AI, NLP, digital-twin simulation, and blockchain into a single, integrated system — and that’s 
+ exactly what makes PharmaTrail-X a first-of-its-kind innovation."

@@ -1,0 +1,137 @@
+{
+  "chain_id": "integration-test",
+  "blocks": [
+    {
+      "index": 0,
+      "timestamp": "2025-11-20T08:55:51.419426",
+      "data": {
+        "message": "PharmaTrail-X Genesis Block",
+        "version": "2.0.0",
+        "created_at": "2025-11-20T08:55:51.419426",
+        "purpose": "Clinical trial audit logging"
+      },
+      "previous_hash": "0",
+      "hash": "82ea2b905164bb8cfcab3d965764d4de09948fd8f875e9f45aba3be56d8c1765",
+      "nonce": 0
+    },
+    {
+      "index": 1,
+      "timestamp": "2025-11-20T08:55:51.422943",
+      "data": {
+        "event_type": "nlp_extraction",
+        "event_data": {
+          "trial_id": "INTEGRATION-001",
+          "entity_count": 8,
+          "ae_events": [
+            {
+              "event_text": "headache",
+              "severity": "mild",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "INTEGRATION-001"
+            },
+            {
+              "event_text": "severe headache",
+              "severity": "severe",
+              "category": "neurological",
+              "confidence": 0.85,
+              "trial_id": "INTEGRATION-001"
+            },
+            {
+              "event_text": "fatigue",
+              "severity": "mild",
+              "category": "general",
+              "confidence": 0.85,
+              "trial_id": "INTEGRATION-001"
+            },
+            {
+              "event_text": "severe fatigue",
+              "severity": "severe",
+              "category": "general",
+              "confidence": 0.85,
+              "trial_id": "INTEGRATION-001"
+            },
+            {
+              "event_text": "decreased appetite",
+              "severity": "mild",
+              "category": "gastrointestinal",
+              "confidence": 0.85,
+              "trial_id": "INTEGRATION-001"
+            },
+            {
+              "event_text": "ALT 65.0 U/L",
+              "severity": "moderate",
+              "category": "laboratory",
+              "confidence": 0.9,
+              "trial_id": "INTEGRATION-001",
+              "lab_name": "alt",
+              "lab_value": 65.0,
+              "normal_range": [
+                0,
+                40
+              ]
+            },
+            {
+              "event_text": "AST 65.0 U/L",
+              "severity": "moderate",
+              "category": "laboratory",
+              "confidence": 0.9,
+              "trial_id": "INTEGRATION-001",
+              "lab_name": "ast",
+              "lab_value": 65.0,
+              "normal_range": [
+                0,
+                40
+              ]
+            },
+            {
+              "event_text": "CREATININE 1.8 mg/dL",
+              "severity": "moderate",
+              "category": "laboratory",
+              "confidence": 0.9,
+              "trial_id": "INTEGRATION-001",
+              "lab_name": "creatinine",
+              "lab_value": 1.8,
+              "normal_range": [
+                0.6,
+                1.2
+              ]
+            }
+          ],
+          "severity": "severe",
+          "confidence": 0.8687500000000001
+        },
+        "logged_at": "2025-11-20T08:55:51.422943",
+        "chain_id": "integration-test"
+      },
+      "previous_hash": "82ea2b905164bb8cfcab3d965764d4de09948fd8f875e9f45aba3be56d8c1765",
+      "hash": "bb791210da83d94cc72a1a98e557d83206af18dd5e941122005c420187ef7cf3",
+      "nonce": 0
+    },
+    {
+      "index": 2,
+      "timestamp": "2025-11-20T08:55:51.424945",
+      "data": {
+        "event_type": "model_prediction",
+        "event_data": {
+          "trial_id": "INTEGRATION-001",
+          "delay_probability": 0.85,
+          "combined_risk_score": 0.9,
+          "regulatory_flags": [
+            "HIGH_DELAY_RISK",
+            "SEVERE_AE_DETECTED"
+          ]
+        },
+        "logged_at": "2025-11-20T08:55:51.424945",
+        "chain_id": "integration-test"
+      },
+      "previous_hash": "bb791210da83d94cc72a1a98e557d83206af18dd5e941122005c420187ef7cf3",
+      "hash": "d008414be61e742f1958a4b422586ad30bd4195b5dcb9274360aa9ee6ec3c8cc",
+      "nonce": 0
+    }
+  ],
+  "metadata": {
+    "total_blocks": 3,
+    "last_updated": "2025-11-20T08:55:51.425942"
+  }
+}

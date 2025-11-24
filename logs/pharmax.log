@@ -1,0 +1,56 @@
+2025-11-20 12:28:14.592 | INFO     | __main__:main:44 - 🚀 Starting PharmaTrail-X Phase 1 Training Pipeline
+2025-11-20 12:28:15.711 | INFO     | __main__:main:53 - 📊 Step 1: Data Ingestion
+2025-11-20 12:28:15.712 | INFO     | src.ingestion.data_ingester:ingest_clinical_trials_csv:23 - Ingesting clinical trials data from PharmaTrailX_ClinicalTrialMaster2.csv
+2025-11-20 12:28:15.839 | INFO     | src.ingestion.data_ingester:ingest_clinical_trials_csv:28 - Loaded 66000 records from CSV
+2025-11-20 12:28:16.060 | INFO     | src.ingestion.data_ingester:ingest_clinical_trials_csv:39 - Saved processed data to data\processed\clinical_trials_processed.parquet
+2025-11-20 12:28:16.060 | INFO     | __main__:main:61 - ✅ Ingested 66000 records from PharmaTrailX_ClinicalTrialMaster2.csv
+2025-11-20 12:28:16.061 | INFO     | src.ingestion.data_ingester:generate_mock_fhir_data:95 - Generating 10 mock FHIR trial records
+2025-11-20 12:28:16.063 | INFO     | src.ingestion.data_ingester:generate_mock_fhir_data:180 - Saved mock FHIR data to data\raw\mock_fhir_trials.json
+2025-11-20 12:28:16.063 | INFO     | __main__:main:66 - ✅ Generated 10 mock FHIR trial records
+2025-11-20 12:28:16.063 | INFO     | __main__:main:69 - 🔧 Step 2: Feature Engineering
+2025-11-20 12:28:16.063 | INFO     | src.preprocessing.feature_engineer:engineer_features:23 - Starting feature engineering pipeline
+2025-11-20 12:28:16.075 | INFO     | src.preprocessing.feature_engineer:_create_time_features:56 - Creating time-based features
+2025-11-20 12:28:16.206 | INFO     | src.preprocessing.feature_engineer:_create_enrollment_features:90 - Creating enrollment features
+2025-11-20 12:28:16.301 | INFO     | src.preprocessing.feature_engineer:_create_patient_aggregations:126 - Creating patient aggregation features
+2025-11-20 12:28:16.373 | INFO     | src.preprocessing.feature_engineer:_create_site_features:156 - Creating site-level features
+2025-11-20 12:28:16.432 | INFO     | src.preprocessing.feature_engineer:_create_safety_features:190 - Creating safety features
+2025-11-20 12:28:16.436 | INFO     | src.preprocessing.feature_engineer:_create_compliance_features:216 - Creating compliance features
+2025-11-20 12:28:16.444 | INFO     | src.preprocessing.feature_engineer:_create_delay_score:240 - Creating delay score
+2025-11-20 12:28:16.449 | INFO     | src.preprocessing.feature_engineer:engineer_features:49 - Feature engineering complete. Created 105 features
+2025-11-20 12:28:16.449 | INFO     | src.preprocessing.feature_engineer:prepare_ml_features:262 - Preparing features for ML
+2025-11-20 12:28:16.547 | INFO     | src.preprocessing.feature_engineer:prepare_ml_features:290 - Prepared 84 features for ML
+2025-11-20 12:28:16.548 | INFO     | __main__:main:74 - ✅ Created 84 features for ML
+2025-11-20 12:28:16.548 | INFO     | __main__:main:75 - 📈 Feature matrix shape: (66000, 84)
+2025-11-20 12:28:16.548 | INFO     | __main__:main:78 - 🔍 Top engineered features:
+2025-11-20 12:28:16.548 | INFO     | __main__:main:80 -   1. Age
+2025-11-20 12:28:16.549 | INFO     | __main__:main:80 -   2. BMI
+2025-11-20 12:28:16.549 | INFO     | __main__:main:80 -   3. Risk_Score
+2025-11-20 12:28:16.549 | INFO     | __main__:main:80 -   4. BP_Systolic
+2025-11-20 12:28:16.549 | INFO     | __main__:main:80 -   5. BP_Diastolic
+2025-11-20 12:28:16.549 | INFO     | __main__:main:80 -   6. ALT_Level
+2025-11-20 12:28:16.549 | INFO     | __main__:main:80 -   7. AST_Level
+2025-11-20 12:28:16.549 | INFO     | __main__:main:80 -   8. Creatinine
+2025-11-20 12:28:16.549 | INFO     | __main__:main:80 -   9. ADR_Reported
+2025-11-20 12:28:16.550 | INFO     | __main__:main:80 -   10. ADR_Severity
+2025-11-20 12:28:16.550 | INFO     | __main__:main:83 - 🤖 Step 3: Model Training
+2025-11-20 12:28:16.550 | INFO     | __main__:main:87 - 📊 Target distribution - Delayed: 66000, On-time: 0
+2025-11-20 12:28:16.551 | INFO     | __main__:main:90 - 🎯 Training XGBoost delay prediction model...
+2025-11-20 12:28:16.551 | INFO     | src.models.ml_pipeline:train_delay_predictor:33 - Training delay prediction model
+2025-11-20 12:28:17.511 | INFO     | src.models.ml_pipeline:train_delay_predictor:63 - Performing hyperparameter tuning...
+2025-11-20 12:28:35.997 | ERROR    | __main__:main:171 - ❌ Pipeline failed: 
+All the 1215 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1215 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\model_selection\_validation.py", line 859, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\sklearn.py", line 1491, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]
+
