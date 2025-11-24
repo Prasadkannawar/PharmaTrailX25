@@ -56,8 +56,8 @@ function App() {
 
     fetchHealthStatus();
     
-    // Refresh health status every 30 seconds
-    const interval = setInterval(fetchHealthStatus, 30000);
+    // Refresh health status every 10 minutes to reduce demo-time flicker
+    const interval = setInterval(fetchHealthStatus, 600000);
     return () => clearInterval(interval);
   }, []);
 
