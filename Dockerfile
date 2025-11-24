@@ -20,5 +20,5 @@ COPY . .
 
 EXPOSE 10000
 
-# Start FastAPI (Phase 3 integrated API)
-CMD ["uvicorn", "phase3_integrated_api:app", "--host", "0.0.0.0", "--port", "10000"]
+# Start FastAPI (Phase 3 integrated API); honor PORT if provided (Render, etc.)
+CMD ["sh", "-c", "uvicorn phase3_integrated_api:app --host 0.0.0.0 --port ${PORT:-10000}"]
