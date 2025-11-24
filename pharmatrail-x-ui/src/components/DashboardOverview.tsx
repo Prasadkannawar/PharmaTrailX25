@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Activity, AlertTriangle, CheckCircle, Clock, Users, TrendingUp } from 'lucide-react';
 import Plot from 'react-plotly.js';
 

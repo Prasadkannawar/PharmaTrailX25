@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Shield, Clock, Hash, RefreshCw } from 'lucide-react';
 import { apiService, BlockchainEvent } from '../services/api';
 
@@ -11,7 +11,7 @@ const BlockchainViewer: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [limit, setLimit] = useState(10);
 
-  const fetchBlockchainData = async () => {
+  const fetchBlockchainData = useCallback(async () => {
     try {
       setIsLoading(true);
       setError(null);
@@ -25,11 +25,11 @@ const BlockchainViewer: React.FC = () => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [limit]);
 
   useEffect(() => {
     fetchBlockchainData();
-  }, [limit]);
+  }, [fetchBlockchainData]);
 
   const formatTimestamp = (timestamp: string) => {
     return new Date(timestamp).toLocaleString();

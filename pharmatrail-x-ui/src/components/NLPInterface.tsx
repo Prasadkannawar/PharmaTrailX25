@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, Zap, AlertTriangle, CheckCircle, Upload } from 'lucide-react';
+import { FileText, Zap, AlertTriangle, CheckCircle } from 'lucide-react';
 import { apiService, NLPResponse } from '../services/api';
 
 const NLPInterface: React.FC = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Settings, Play, BarChart3, TrendingUp, Users, Clock } from 'lucide-react';
+import { Settings, Play, BarChart3, Users, Clock } from 'lucide-react';
 import { apiService, TrialConfig, SiteConfig, SimulationResponse } from '../services/api';
 
 const DigitalTwin: React.FC = () => {
